@@ -1,0 +1,51 @@
+.Item__tree {
+  margin: 5px 0 0 0; }
+  .Item__tree .Item__instance ul, .Item__tree input[type="checkbox"] {
+    display: none; }
+  .Item__tree .Item__instance input:checked ~ ul {
+    display: block; }
+  .Item__tree ul {
+    margin-left: 20px; }
+    .Item__tree ul li {
+      list-style-type: none;
+      margin: 10px 0 10px 10px;
+      position: relative; }
+      .Item__tree ul li:before {
+        content: "";
+        position: absolute;
+        top: -10px;
+        left: -20px;
+        border-left: 1px solid #dddddd;
+        border-bottom: 1px solid #dddddd;
+        width: 20px;
+        height: 15px; }
+      .Item__tree ul li:after {
+        position: absolute;
+        content: "";
+        top: 5px;
+        left: -20px;
+        border-left: 1px solid #dddddd;
+        border-top: 1px solid #dddddd;
+        width: 20px;
+        height: 100%; }
+      .Item__tree ul li:last-child:after {
+        display: none; }
+  .Item__tree label, .Item__tree li span {
+    display: block;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    padding: 7px;
+    color: #888;
+    text-decoration: none; }
+    .Item__tree label:hover, .Item__tree label:focus, .Item__tree li span:hover, .Item__tree li span:focus {
+      background: #eeeeee;
+      color: #000000;
+      border: 1px solid #aaaaaa; }
+      .Item__tree label:hover + ul li span, .Item__tree label:focus + ul li span, .Item__tree li span:hover + ul li span, .Item__tree li span:focus + ul li span {
+        background: #eeeeee;
+        color: #000000;
+        border: 1px solid #a7a2aa; }
+    .Item__tree label:hover + ul li:after, .Item__tree label:hover + ul li:before, .Item__tree label:focus + ul li:after, .Item__tree label:focus + ul li:before, .Item__tree li span:hover + ul li:after, .Item__tree li span:hover + ul li:before, .Item__tree li span:focus + ul li:after, .Item__tree li span:focus + ul li:before {
+      border-color: #aaaaaa; }
+
+/*# sourceMappingURL=Item.css.map */

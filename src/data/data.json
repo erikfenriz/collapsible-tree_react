@@ -1,0 +1,84 @@
+{
+  "data": [
+    {
+      "name": "Fruits",
+      "children": [
+        {
+          "name": "Berry",
+          "children": [
+            {
+              "name": "Strawberry"
+            },
+            {
+              "name": "Watermelon"
+            }
+          ]
+        },
+        {
+          "name": "Citrus",
+          "children": [
+            {
+              "name": "Oranges"
+            },
+            {
+              "name": "Grapefruits"
+            },
+            {
+              "name": "Mandarins"
+            },
+            {
+              "name": "Limes"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Vegetables",
+      "children": [
+        {
+          "name": "Leafy green",
+          "children": [
+            {
+              "name": "Lettuce"
+            },
+            {
+              "name": "Spinach"
+            },
+            {
+              "name": "Silverbeet"
+            }
+          ]
+        },
+        {
+          "name": "Marrow",
+          "children": [
+            {
+              "name": "Pumpkin"
+            },
+            {
+              "name": "Cucumber"
+            },
+            {
+              "name": "Zucchini"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Corn",
+      "children": [
+        {
+          "name": "Bread"
+        },
+        {
+          "name": "Cake"
+        },
+        {
+          "name": "Cookies"
+        }
+      ]
+    }
+  ]
+}

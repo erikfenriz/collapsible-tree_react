@@ -1,0 +1,84 @@
+.Item__tree {
+  margin: 5px 0 0 0;
+
+  .Item__instance ul, input[type="checkbox"] {
+    display: none;
+  }
+
+  .Item__instance input:checked ~ ul {
+    display: block;
+  }
+
+  ul {
+    margin-left: 20px;
+    li {
+      list-style-type: none;
+      margin: 10px 0 10px 10px;
+      position: relative;
+      &:before {
+        content: "";
+        position: absolute;
+        top: -10px;
+        left: -20px;
+        border-left: 1px solid #dddddd;
+        border-bottom: 1px solid #dddddd;
+        width: 20px;
+        height: 15px;
+      }
+
+      &:after {
+        position: absolute;
+        content: "";
+        top: 5px;
+        left: -20px;
+        border-left: 1px solid #dddddd;
+        border-top: 1px solid #dddddd;
+        width: 20px;
+        height: 100%;
+      }
+
+      &:last-child:after {
+        display: none;
+      }
+    }
+  }
+
+
+  label, li span {
+    display: block;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    padding: 7px;
+    color: #888;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      background: #eeeeee;
+      color: #000000;
+      border: 1px solid #aaaaaa;
+
+      & + ul {
+        li {
+          span {
+            background: #eeeeee;
+            color: #000000;
+            border: 1px solid #a7a2aa;
+          }
+        }
+      }
+    }
+
+    &:hover + ul,
+    &:focus + ul {
+      li {
+        &:after, &:before {
+          border-color: #aaaaaa;
+        }
+      }
+    }
+  }
+
+}
+
+
